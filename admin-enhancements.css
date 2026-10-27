@@ -1,1 +1,121 @@
 .admin-settings-card{display:none}.category-create-form{display:flex;gap:9px;margin:17px 0 12px;padding:14px;background:#f1ebe2;border:1px solid #e2ded6}.category-create-form input{flex:1;border:1px solid #ded9d0;background:#fbfaf7;padding:10px;font-size:11px;outline:none}.category-create-form button{white-space:nowrap}.admin-category-card{display:flex;justify-content:space-between;align-items:center;gap:12px}.category-actions{display:flex;gap:5px}.category-actions button{border:1px solid #ded9d0;background:transparent;padding:6px 8px;font-size:9px}.category-actions button:last-child{color:#9a664f}.settings-form{max-width:680px;background:#fbfaf7;border:1px solid #e2ded6;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.settings-form label{font-size:10px;font-weight:700;margin-bottom:14px}.settings-form label:nth-of-type(n+3),.settings-form .settings-actions{grid-column:1/-1}.settings-form input,.settings-form textarea{display:block;width:100%;border:1px solid #ded9d0;background:#f6f3ed;padding:10px;margin-top:6px;outline:none;font:11px var(--sans);resize:vertical}.settings-actions{display:flex;align-items:center;gap:14px;border-top:1px solid #e2ded6;padding-top:15px}.settings-saved{font-size:10px;color:#758b49}@media(max-width:720px){.category-create-form{display:block}.category-create-form input{width:100%;margin-bottom:8px}.category-create-form button{width:100%}.settings-form{grid-template-columns:1fr}.settings-form label:nth-of-type(n){grid-column:1}.settings-actions{display:block}.settings-saved{display:block;margin-top:8px}}
+
+
+/* Login fiel à referência visual enviada */
+html:has(.admin-page) { min-height: 100%; }
+body.admin-page:has(#loginScreen:not([hidden])) {
+  min-height: 100vh !important;
+  margin: 0 !important;
+  background: #101b18 !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginScreen.admin-login {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 28px 20px;
+  background:
+    radial-gradient(ellipse at 100% 0%, #79a5a8 0%, #5e888b 30%, transparent 68%),
+    radial-gradient(ellipse at 0% 0%, #10240b 0%, #172a24 34%, transparent 72%),
+    linear-gradient(112deg, #080a0b 0%, #1c3032 50%, #7aa5a8 100%) !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card {
+  position: relative;
+  width: min(370px, 100%);
+  min-height: 407px;
+  padding: 31px 32px 33px;
+  margin: 0;
+  color: #f7f7f5;
+  background: rgba(82, 87, 96, .91) !important;
+  border: 1px solid rgba(219, 229, 231, .12);
+  border-top-color: rgba(40, 120, 57, .65);
+  border-radius: 20px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, .12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card .admin-brand { display: none !important; }
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card .admin-label {
+  margin: 0 0 8px;
+  color: #aeb5bf !important;
+  font: 500 7px/1.5 'DM Mono', monospace;
+  letter-spacing: .15em;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card h1 {
+  margin: 0 0 8px;
+  color: #f7f7f7 !important;
+  font: 400 35px/1.02 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -.055em;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card .login-intro {
+  margin: 0 0 21px;
+  color: #aab9cd !important;
+  font: 11px/1.45 Manrope, Arial, sans-serif;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm {
+  display: grid;
+  gap: 14px;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm label {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  color: #f1f2f3 !important;
+  font: 700 8px/1.3 Manrope, Arial, sans-serif;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm input {
+  width: 100%;
+  height: 39px;
+  min-height: 39px;
+  margin: 0;
+  padding: 0 11px;
+  color: #f5f6f8 !important;
+  background: #111827 !important;
+  border: 1px solid rgba(5, 10, 20, .48) !important;
+  border-radius: 10px;
+  box-shadow: none !important;
+  outline: none;
+  font: 600 10px Manrope, Arial, sans-serif;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm input::placeholder { color: #aab2c0; opacity: 1; }
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm input:focus {
+  border-color: #91aaa7 !important;
+  box-shadow: 0 0 0 2px rgba(145, 170, 167, .18) !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm .login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 40px;
+  min-height: 40px;
+  margin: -1px 0 0;
+  padding: 0 14px;
+  color: #fff !important;
+  background: #168d00 !important;
+  border: 1px solid #168d00 !important;
+  border-radius: 10px;
+  box-shadow: 0 10px 19px rgba(104, 130, 31, .22);
+  font: 800 11px Manrope, Arial, sans-serif;
+  transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm .login-button:hover {
+  background: #117500 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, .2);
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm .login-button span { font-size: 15px; }
+body.admin-page:has(#loginScreen:not([hidden])) .login-error { color: #ffe0e0; font-size: 10px; }
+body.admin-page:has(#loginScreen:not([hidden])) .login-help { display: none !important; }
+@media (max-width: 480px) {
+  body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card {
+    width: min(370px, 100%);
+    min-height: 0;
+    padding: 30px 25px 34px;
+  }
+}
