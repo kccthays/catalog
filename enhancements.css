@@ -275,3 +275,15 @@ main > section,
   color: #F7F5EE !important;
   border-bottom-color: #173D2A !important;
 }
+
+
+/* Faixa superior: fundo verde-escuro, texto claro */
+.announcement {
+  background: #173D2A !important;
+  background-color: #173D2A !important;
+  color: #F7F5EE !important;
+  border: 0 !important;
+}
+.announcement span {
+  color: #F7F5EE !important;
+}
