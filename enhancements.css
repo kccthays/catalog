@@ -165,3 +165,32 @@ body{color:#283329!important}
 .manifesto{background:#B7C5B0!important;color:#283329!important;border-color:#A6B7A0!important}
 .manifesto .eyebrow,.manifesto p{color:#536252!important}
 .hero-image{background:#B7C5B0!important}
+
+
+/* Correção definitiva do fundo Eucalipto empoeirado */
+html,
+body {
+  background-color: #C8D2C2 !important;
+  background-image: none !important;
+}
+body::before,
+body::after {
+  display: none !important;
+  background: none !important;
+}
+body > *,
+main,
+main > section,
+.announcement,
+.header,
+.footer {
+  background-color: #C8D2C2 !important;
+}
+.manifesto {
+  background-color: #B7C5B0 !important;
+}
+.product-card,
+.contact,
+.search {
+  background-color: #F7F5EE !important;
+}
