@@ -206,3 +206,14 @@ main > section,
 .manifesto p {
   color: #3F5140 !important;
 }
+
+
+/* Verde de destaque com mais contraste no texto */
+:root {
+  --lime: #71851F;
+}
+.hero em,
+.manifesto em,
+.contact em {
+  color: #71851F !important;
+}
