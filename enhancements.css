@@ -267,3 +267,11 @@ main > section,
     transition: none !important;
   }
 }
+
+
+/* Ajuste correto: faixa superior verde escura, texto claro */
+.announcement {
+  background-color: #173D2A !important;
+  color: #F7F5EE !important;
+  border-bottom-color: #173D2A !important;
+}
