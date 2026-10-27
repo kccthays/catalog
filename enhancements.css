@@ -194,3 +194,15 @@ main > section,
 .search {
   background-color: #F7F5EE !important;
 }
+
+
+/* Contraste do bloco "Nosso jeito" sobre o fundo Eucalipto */
+.manifesto {
+  background-color: #A8BBA1 !important;
+  border-color: #93A88C !important;
+  color: #283329 !important;
+}
+.manifesto .eyebrow,
+.manifesto p {
+  color: #3F5140 !important;
+}
