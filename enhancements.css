@@ -146,3 +146,22 @@ main,.header,.footer{background:var(--paper)!important}
 .manifesto .eyebrow{color:var(--muted)!important}
 .manifesto p{color:var(--muted)!important}
 @media(max-width:760px){.manifesto{padding:29px 23px}}
+
+
+/* Fundo alternativo: Eucalipto empoeirado */
+:root{
+  --paper:#C8D2C2;
+  --line:#B0BEAA;
+  --muted:#536252;
+}
+body,main,.header,.footer,.announcement{background:#C8D2C2!important}
+.announcement{color:#283329!important;border-color:#B0BEAA!important}
+body{color:#283329!important}
+.header,.footer{border-color:#B0BEAA!important}
+.product-card,.contact{background:#F7F5EE!important;border-color:#DCE2D7!important}
+.search{background:#F7F5EE!important;border-color:#B0BEAA!important}
+.filters{border-color:#B0BEAA!important}
+.catalog-heading{border-color:#8F9D8A!important}
+.manifesto{background:#B7C5B0!important;color:#283329!important;border-color:#A6B7A0!important}
+.manifesto .eyebrow,.manifesto p{color:#536252!important}
+.hero-image{background:#B7C5B0!important}
