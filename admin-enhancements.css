@@ -119,3 +119,58 @@ body.admin-page:has(#loginScreen:not([hidden])) .login-help { display: none !imp
     padding: 30px 25px 34px;
   }
 }
+
+
+/* Refinamento final da tela de acesso conforme a referência original */
+body.admin-page:has(#loginScreen:not([hidden])) #loginScreen.admin-login {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(133, 176, 178, .86) 0%, rgba(103, 146, 149, .72) 30%, transparent 68%),
+    radial-gradient(ellipse at 0% 0%, #10230c 0%, #172a23 34%, transparent 70%),
+    linear-gradient(118deg, #080b0a 0%, #1b2d2c 48%, #709b9d 100%) !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card {
+  width: min(370px, 100%) !important;
+  min-height: 407px !important;
+  padding: 29px 30px 32px !important;
+  background: rgba(79, 85, 94, .90) !important;
+  border-color: rgba(215, 226, 227, .14) !important;
+  border-top-color: rgba(77, 133, 81, .7) !important;
+  border-radius: 20px !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card::before {
+  content: "PAINEL DA LOJA";
+  display: block;
+  margin: 0 0 14px;
+  color: #b6c1c5;
+  font: 500 7px/1.4 'DM Mono', monospace;
+  letter-spacing: .14em;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card .admin-label {
+  margin-bottom: 8px !important;
+  color: #aeb5bf !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card h1 {
+  font-size: 35px !important;
+  margin-bottom: 8px !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card .login-intro {
+  margin-bottom: 20px !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm {
+  gap: 13px !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm .login-button {
+  background: #278d12 !important;
+  border-color: #278d12 !important;
+  box-shadow: 0 8px 18px rgba(39, 92, 20, .18) !important;
+}
+body.admin-page:has(#loginScreen:not([hidden])) #loginForm .login-button:hover {
+  background: #20770f !important;
+  border-color: #20770f !important;
+}
+@media (max-width: 480px) {
+  body.admin-page:has(#loginScreen:not([hidden])) .admin-login-card {
+    min-height: 0 !important;
+    padding: 28px 24px 30px !important;
+  }
+}
