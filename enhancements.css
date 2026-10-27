@@ -217,3 +217,53 @@ main > section,
 .contact em {
   color: #71851F !important;
 }
+
+
+/* Faixa superior com texto em verde profundo */
+.announcement {
+  color: #173D2A !important;
+  font-weight: 600;
+}
+
+/* CTA do WhatsApp: interação ao passar o mouse e ao clicar */
+.contact .cta {
+  background: #71851F !important;
+  color: #fffdf5 !important;
+  border: 1px solid #71851F !important;
+  border-radius: 999px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  transition: transform .22s ease, background-color .22s ease, box-shadow .22s ease;
+  box-shadow: 0 4px 0 rgba(40, 51, 41, .08);
+}
+.contact .cta:hover {
+  background: #526719 !important;
+  border-color: #526719 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(40, 51, 41, .16);
+}
+.contact .cta:active {
+  transform: translateY(0) scale(.98);
+  box-shadow: none;
+}
+.contact .cta:focus-visible {
+  outline: 3px solid #283329;
+  outline-offset: 4px;
+}
+.contact .cta span,
+.contact .cta svg {
+  transition: transform .22s ease;
+}
+.contact .cta:hover span,
+.contact .cta:hover svg {
+  transform: translate(2px, -2px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .contact .cta,
+  .contact .cta span,
+  .contact .cta svg {
+    transition: none !important;
+  }
+}
